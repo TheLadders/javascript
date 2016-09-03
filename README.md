@@ -1102,15 +1102,15 @@ Other Style Guides
 
     ```javascript
     // bad
-    const AirbnbStyleGuide = require('./AirbnbStyleGuide');
-    module.exports = AirbnbStyleGuide.es6;
+    const LaddersStyleGuide = require('./LaddersStyleGuide');
+    module.exports = LaddersStyleGuide.es6;
 
     // ok
-    import AirbnbStyleGuide from './AirbnbStyleGuide';
-    export default AirbnbStyleGuide.es6;
+    import LaddersStyleGuide from './LaddersStyleGuide';
+    export default LaddersStyleGuide.es6;
 
     // best
-    import { es6 } from './AirbnbStyleGuide';
+    import { es6 } from './LaddersStyleGuide';
     export default es6;
     ```
 
@@ -1121,10 +1121,10 @@ Other Style Guides
 
     ```javascript
     // bad
-    import * as AirbnbStyleGuide from './AirbnbStyleGuide';
+    import * as LaddersStyleGuide from './LaddersStyleGuide';
 
     // good
-    import AirbnbStyleGuide from './AirbnbStyleGuide';
+    import LaddersStyleGuide from './LaddersStyleGuide';
     ```
 
   <a name="modules--no-export-from-import"></a><a name="10.3"></a>
@@ -1135,11 +1135,11 @@ Other Style Guides
     ```javascript
     // bad
     // filename es6.js
-    export { es6 as default } from './airbnbStyleGuide';
+    export { es6 as default } from './laddersStyleGuide';
 
     // good
     // filename es6.js
-    import { es6 } from './AirbnbStyleGuide';
+    import { es6 } from './LaddersStyleGuide';
     export default es6;
     ```
 
@@ -2138,7 +2138,7 @@ Other Style Guides
     const foo = 'Whatever national crop flips the window. The cartoon reverts within the screw. Whatever wizard constrains a helpful ally. The counterpart ascends!';
 
     // bad
-    $.ajax({ method: 'POST', url: 'https://airbnb.com/', data: { name: 'John' } }).done(() => console.log('Congratulations!')).fail(() => console.log('You have failed this city.'));
+    $.ajax({ method: 'POST', url: 'https://www.theladders.com/', data: { name: 'John' } }).done(() => console.log('Congratulations!')).fail(() => console.log('You have failed this city.'));
 
     // good
     const foo = 'Whatever national crop flips the window. The cartoon reverts within the screw. ' +
@@ -2147,7 +2147,7 @@ Other Style Guides
     // good
     $.ajax({
       method: 'POST',
-      url: 'https://airbnb.com/',
+      url: 'https://www.theladders.com/',
       data: { name: 'John' },
     })
       .done(() => console.log('Congratulations!'))
@@ -2506,12 +2506,12 @@ Other Style Guides
   - [22.8](#naming--PascalCase-singleton) Use PascalCase when you export a constructor / class / singleton / function library / bare object.
 
     ```javascript
-    const AirbnbStyleGuide = {
+    const LaddersStyleGuide = {
       es6: {
       }
     };
 
-    export default AirbnbStyleGuide;
+    export default LaddersStyleGuide;
     ```
 
 
@@ -2772,9 +2772,9 @@ Other Style Guides
 **Tools**
 
   - Code Style Linters
-    + [ESlint](http://eslint.org/) - [Airbnb Style .eslintrc](https://github.com/airbnb/javascript/blob/master/linters/.eslintrc)
-    + [JSHint](http://jshint.com/) - [Airbnb Style .jshintrc](https://github.com/airbnb/javascript/blob/master/linters/.jshintrc)
-    + [JSCS](https://github.com/jscs-dev/node-jscs) - [Airbnb Style Preset](https://github.com/jscs-dev/node-jscs/blob/master/presets/airbnb.json)
+    + [ESlint](http://eslint.org/) - [Ladders Style .eslintrc](https://github.com/airbnb/javascript/blob/master/linters/.eslintrc)
+    + [JSHint](http://jshint.com/) - [Ladders Style .jshintrc](https://github.com/airbnb/javascript/blob/master/linters/.jshintrc)
+    + [JSCS](https://github.com/jscs-dev/node-jscs) - [Ladders Style Preset](https://github.com/jscs-dev/node-jscs/blob/master/presets/airbnb.json)
 
 **Other Style Guides**
 
@@ -2954,6 +2954,7 @@ Other Style Guides
 
 (The MIT License)
 
+Copyright (c) 2016 Ladders
 Copyright (c) 2014-2016 Airbnb
 
 Permission is hereby granted, free of charge, to any person obtaining
